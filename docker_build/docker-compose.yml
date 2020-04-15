@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    docker_builder:
+        build: ./builder
+        volumes:
+            - ../:/project_build_dir
+            - ./bin:/project_bin
+        environment:
+            - EXE_NAME=simple_statistical_functions_test
+            - BUILD_DIR=/project_build_dir
+            - BIN_DIR=/project_bin
+        ports:
+            - "2200:22"
+        

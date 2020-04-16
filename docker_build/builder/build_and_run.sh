@@ -8,6 +8,10 @@ echo
 
 echo
 
+./test.sh
+
+echo
+
 ./run.sh
 
 echo

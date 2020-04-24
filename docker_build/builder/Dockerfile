@@ -11,6 +11,7 @@ RUN gcc -v
 WORKDIR /workdir
 
 COPY build.sh /workdir/build.sh
+COPY test.sh /workdir/test.sh
 COPY run.sh /workdir/run.sh
 COPY build_and_run.sh /workdir/build_and_run.sh
 
